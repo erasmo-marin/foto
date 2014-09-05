@@ -1,0 +1,85 @@
+This "documentation" is currently in spanish.
+
+¿Por qué el re-write? Simple, cuando Foto (que no era más que un prototipo con el cual aprendí Vala y Gtk) fue creciendo,
+me di cuenta que el modelo utilizado no era sostenible en el tiempo y el código no era mantenible. Para poder implementar
+nuevas características, era necesario re-escribir la aplicación, pero mucho código del prototipo se utilizó en este
+proceso de todas formas. A continuación especifico la nueva arquitectura seguida, de forma que el lector sea capaz de hacer hacking sobre
+el código de manera más fácil. He intentado de hacer el código lo más sencillo y fácil de leer posible, separando todo en
+namespaces y carpetas intuitivas, clases pequeñas en la medida de lo posible y con la mínima funcionalidad requerida. Si
+una funcionalidad requiere demasiado código, es un indicativo de que probablemente debería ser implementado en una nueva 
+clase. Los archivos sólo contienen una clase y en algunos casos, las enumeraciones relacionadas a la clase. El archivo
+normalmente tiene el nombre de la clase, siguiendo el estándar de java.
+
+GUI
+===
+
+Foto tiene una ventana principal llamada AppWindow. Esta ventana contiene al Sidebar a la izquierda y 
+un PageContainer a la derecha. El PageContainer se encarga de cambiar las páginas e instanciarlas cuando
+sea necesario. Todas las páginas existentes están en la enumeración PageType. Page es una clase abstracta padre
+de todas las páginas. CollectionPage es una clase abstracta hija de Page encargada de mostrar colecciones de 
+widgets de un mismo tamaño, ya sean albums o thumbnails. Clases que se extienden de CollectionPage son LastImportedPage
+y LibraryPage.
+Cada Page tiene un toolbar derecho y un toolbar izquierdo. Estos toolbars son situados en el HeaderBar, y cuando
+PageContainer emite la señal de que se ha cambiado la página, AppWindow remueve los toolbars antiguos y pone los
+toolbars de la página actual. El método seguido evita que las señales se desconecten al quitar las toolbars.
+
+ViewerPage es un Page encargado de mostrar un visor de imágenes. ViewerPage es capaz de mostrar colecciones de
+fotos, ya sea los situados en un album, en la librería, por tags o por carpeta. ViewerPage contiene un PictureWidget
+el cual contiene una imagen y permite hacerle zoom, escalar y arrastrar la foto. En el futuro debería ser capaz también
+de aplicar filtros.
+
+Los diálogos se almacenan en la carpeta dialogs, y están lógicamente contenidos en el namespace Foto.Dialogs.
+
+El Sidebar es el panel izquierdo, compuesto por un "TreeView" y por un toolbar inferior que contiene íconos pequeños, los
+cuales a su vez contienen menús. Sidebar tiene una clase interna llamada SidebarItem que permite guardar el tipo de 
+página a la que representa el item. De esa forma, cuando un Item es seleccionado, es más fácil saber a cuál página cambiar.
+
+Sidebar recibe en su constructor al PageContainer, de forma de recibir las señales cuando la página cambia, y así
+seleccionar o deseleccionar el item correspondiente, ya que no todas las pages están representadas en el TreeView.
+
+
+Base de datos y Core
+====================
+
+Foto tiene una capa DAO (Data Object). Estos objetos permiten acceder de forma transparente a la base de datos.
+La Base de datos sqlite carga desde la clase DbManager. Esta clase es la encargada de crear, actualizar y ejecutar
+operaciones sobre la base de datos. Los DAO devuelven objetos que sólo almacenan datos y no proveen operaciones, 
+conocidos como VO. Son objetos únicamente dedicados al transporte inter-capa de datos.
+
+El núcleo o Core entonces, es el encargado de recibir todas las consultas y trabajos pesados (Job). Por ejemplo, 
+el ImportJob es una clase destinada únicamente a la importación de nuevas fotografías. Todos los Jobs corren como
+Threads, de manera de no congelar la aplicación y pudiendo correr en paralelo sin afectar el rendimiento.
+
+Utilidades
+==========
+
+El namespace Utils contiene una serie de clases que implementan utilidades que pueden ser utilizadas por diversas clases.
+De esa manera, IconFactory se encarga de cargar en memoria todos los íconos en Pixbuf sin cargar el mismo ícono dos veces.
+
+PixbufUtils es otra clase de utilidad, la cual permite realizar operaciones frecuentes sobre los pixbuf. La más importante
+es la de dibujado de sombras, que permite incluso dibujar sombras en pixbuf con canal alfa.
+
+CacheUtils es una clase que contiene las operaciones necesarias para dejar en cache los thumbnails y para luego 
+recuperarlos en demanda. 
+
+
+Cosas por hacer
+===============
+
+*Filtros
+Como casi toda aplicación que permite administrar albums de fotografías, Foto debería proporcionar filtros y mejoras.
+
+*Faces
+Foto debería ser capaz de reconocer rostros y etiquetarlos tanto de forma manual como automática.
+
+*Share
+Foto debería poder compartir albums completos en internet por medio de plugins o utilizando contractors.
+
+*Zoom en CollectionPage
+Por motivos de que una implementación que sea escalable y óptima es complicada, he dejado esta tarea de lado. Si quieres
+crear una nueva versión de CollectionPage que permita hacer zoom a los Items, eres bienvenido.
+
+*Monitorear archivos
+Foto debería ser capaz de monitorear la carpeta de imágenes para agregar de forma automática las nuevas imágenes agregadas y quitar las eliminadas.
+
+

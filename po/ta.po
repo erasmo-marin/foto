@@ -1,0 +1,296 @@
+# Tamil translation for foto
+# Copyright (c) 2014 Rosetta Contributors and Canonical Ltd 2014
+# This file is distributed under the same license as the foto package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: foto\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2014-08-28 03:38-0400\n"
+"PO-Revision-Date: 2014-08-28 02:00+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Tamil <ta@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2014-08-31 07:33+0000\n"
+"X-Generator: Launchpad (build 17176)\n"
+
+#: /home/erasmo/foto/foto-1.0/po/../src/AppWindow.vala:75
+#: /home/erasmo/foto/foto-1.0/po/../src/FotoApp.vala:40
+#: /home/erasmo/foto/foto-1.0/po/../src/sidebar/Sidebar.vala:82
+msgid "Photos"
+msgstr ""
+
+#: /home/erasmo/foto/foto-1.0/po/../src/MainMenu.vala:30
+msgid "Options"
+msgstr "விருப்பங்கள்"
+
+#: /home/erasmo/foto/foto-1.0/po/../src/MainMenu.vala:31
+msgid "Fullscreen"
+msgstr "முழுத்திரை"
+
+#: /home/erasmo/foto/foto-1.0/po/../src/widgets/DropArea.vala:66
+msgid ", or "
+msgstr ", அல்லது "
+
+#: /home/erasmo/foto/foto-1.0/po/../src/widgets/DropArea.vala:66
+msgid "Browse"
+msgstr "உலாவு"
+
+#: /home/erasmo/foto/foto-1.0/po/../src/widgets/DropArea.vala:139
+msgid "Images"
+msgstr "படங்கள்"
+
+#: /home/erasmo/foto/foto-1.0/po/../src/widgets/ZoomSlider.vala:34
+msgid "Zoom out"
+msgstr ""
+
+#: /home/erasmo/foto/foto-1.0/po/../src/widgets/ZoomSlider.vala:51
+msgid "Zoom in"
+msgstr ""
+
+#: /home/erasmo/foto/foto-1.0/po/../src/widgets/ItemSortBar.vala:32
+msgid "Sort by: "
+msgstr ""
+
+#: /home/erasmo/foto/foto-1.0/po/../src/widgets/ItemSearchBar.vala:27
+msgid "Search"
+msgstr "தேடு"
+
+#: /home/erasmo/foto/foto-1.0/po/../src/sidebar/Sidebar.vala:76
+msgid "Library"
+msgstr ""
+
+#: /home/erasmo/foto/foto-1.0/po/../src/sidebar/Sidebar.vala:77
+msgid "Albums"
+msgstr ""
+
+#: /home/erasmo/foto/foto-1.0/po/../src/sidebar/Sidebar.vala:78
+msgid "Tags"
+msgstr ""
+
+#: /home/erasmo/foto/foto-1.0/po/../src/sidebar/Sidebar.vala:86
+msgid "Last imported"
+msgstr ""
+
+#: /home/erasmo/foto/foto-1.0/po/../src/pages/TagPage.vala:54
+#: /home/erasmo/foto/foto-1.0/po/../src/pages/LibraryPage.vala:73
+#: /home/erasmo/foto/foto-1.0/po/../src/pages/AlbumPage.vala:71
+#: /home/erasmo/foto/foto-1.0/po/../src/pages/LastImportedPage.vala:62
+msgid "Add to album..."
+msgstr ""
+
+#: /home/erasmo/foto/foto-1.0/po/../src/pages/TagPage.vala:55
+#: /home/erasmo/foto/foto-1.0/po/../src/pages/LibraryPage.vala:74
+#: /home/erasmo/foto/foto-1.0/po/../src/pages/AlbumPage.vala:72
+#: /home/erasmo/foto/foto-1.0/po/../src/pages/LastImportedPage.vala:63
+msgid "Remove"
+msgstr ""
+
+#: /home/erasmo/foto/foto-1.0/po/../src/pages/TagPage.vala:56
+#: /home/erasmo/foto/foto-1.0/po/../src/pages/LibraryPage.vala:75
+#: /home/erasmo/foto/foto-1.0/po/../src/pages/AlbumPage.vala:73
+#: /home/erasmo/foto/foto-1.0/po/../src/pages/LastImportedPage.vala:64
+msgid "Unselect"
+msgstr ""
+
+#: /home/erasmo/foto/foto-1.0/po/../src/pages/TagPage.vala:79
+#: /home/erasmo/foto/foto-1.0/po/../src/pages/LibraryPage.vala:98
+#: /home/erasmo/foto/foto-1.0/po/../src/pages/AlbumPage.vala:96
+#: /home/erasmo/foto/foto-1.0/po/../src/pages/LastImportedPage.vala:87
+msgid "alphabetically"
+msgstr ""
+
+#: /home/erasmo/foto/foto-1.0/po/../src/pages/TagPage.vala:80
+#: /home/erasmo/foto/foto-1.0/po/../src/pages/LibraryPage.vala:99
+#: /home/erasmo/foto/foto-1.0/po/../src/pages/AlbumPage.vala:97
+msgid "import date"
+msgstr ""
+
+#: /home/erasmo/foto/foto-1.0/po/../src/pages/TagPage.vala:81
+#: /home/erasmo/foto/foto-1.0/po/../src/pages/LibraryPage.vala:100
+#: /home/erasmo/foto/foto-1.0/po/../src/pages/AlbumPage.vala:98
+#: /home/erasmo/foto/foto-1.0/po/../src/pages/LastImportedPage.vala:88
+msgid "rating"
+msgstr ""
+
+#: /home/erasmo/foto/foto-1.0/po/../src/pages/ViewerPage.vala:80
+msgid "Show previous photo"
+msgstr ""
+
+#: /home/erasmo/foto/foto-1.0/po/../src/pages/ViewerPage.vala:83
+msgid "Show next photo"
+msgstr ""
+
+#: /home/erasmo/foto/foto-1.0/po/../src/pages/ViewerPage.vala:89
+msgid "Adjust the photo at the available space"
+msgstr ""
+
+#: /home/erasmo/foto/foto-1.0/po/../src/pages/ViewerPage.vala:92
+msgid "Set the photo at the original scale"
+msgstr ""
+
+#: /home/erasmo/foto/foto-1.0/po/../src/pages/ViewerPage.vala:95
+msgid "Rotate to the left"
+msgstr ""
+
+#: /home/erasmo/foto/foto-1.0/po/../src/pages/ViewerPage.vala:98
+msgid "Rotate to the right"
+msgstr ""
+
+#: /home/erasmo/foto/foto-1.0/po/../src/pages/ViewerPage.vala:110
+msgid "Show view options"
+msgstr ""
+
+#: /home/erasmo/foto/foto-1.0/po/../src/pages/WelcomePage.vala:24
+msgid "Import some Photos"
+msgstr ""
+
+#: /home/erasmo/foto/foto-1.0/po/../src/pages/WelcomePage.vala:24
+msgid "Drop photos here"
+msgstr ""
+
+#: /home/erasmo/foto/foto-1.0/po/../src/dialogs/PropertiesDialog.vala:28
+msgid "Properties"
+msgstr "பண்புகள்"
+
+#: /home/erasmo/foto/foto-1.0/po/../src/dialogs/PropertiesDialog.vala:37
+msgid "<b>Info:</b>"
+msgstr "<b>தகவல்:</b>"
+
+#: /home/erasmo/foto/foto-1.0/po/../src/dialogs/PropertiesDialog.vala:39
+msgid "Created:"
+msgstr "உருவாக்கப்பட்டது:"
+
+#: /home/erasmo/foto/foto-1.0/po/../src/dialogs/PropertiesDialog.vala:40
+msgid "Mimetype:"
+msgstr "மைம்வகை:"
+
+#: /home/erasmo/foto/foto-1.0/po/../src/dialogs/PropertiesDialog.vala:41
+msgid "Location:"
+msgstr "இடம்"
+
+#: /home/erasmo/foto/foto-1.0/po/../src/dialogs/PropertiesDialog.vala:51
+msgid "<b>Metadata:</b>"
+msgstr "<b>மேல்நிலைத்தரவு:</b>"
+
+#: /home/erasmo/foto/foto-1.0/po/../src/dialogs/PropertiesDialog.vala:53
+msgid "Camera model:"
+msgstr "கேமரா மாடல்:"
+
+#: /home/erasmo/foto/foto-1.0/po/../src/dialogs/PropertiesDialog.vala:54
+msgid "Comment:"
+msgstr "குறிப்புரை:"
+
+#: /home/erasmo/foto/foto-1.0/po/../src/dialogs/PropertiesDialog.vala:55
+msgid "Focal length:"
+msgstr "குவியத்தூரம்:"
+
+#: /home/erasmo/foto/foto-1.0/po/../src/dialogs/PropertiesDialog.vala:56
+msgid "Resolution:"
+msgstr "தெளிவுத்திறன்:"
+
+#: /home/erasmo/foto/foto-1.0/po/../src/dialogs/PropertiesDialog.vala:57
+msgid "Rating:"
+msgstr "மதிப்பீடு:"
+
+#: /home/erasmo/foto/foto-1.0/po/../src/dialogs/PropertiesDialog.vala:58
+msgid "Author:"
+msgstr ""
+
+#: /home/erasmo/foto/foto-1.0/po/../src/dialogs/PropertiesDialog.vala:59
+msgid "CopyRight:"
+msgstr ""
+
+#: /home/erasmo/foto/foto-1.0/po/../src/dialogs/PropertiesDialog.vala:60
+msgid "Software:"
+msgstr ""
+
+#: /home/erasmo/foto/foto-1.0/po/../src/dialogs/PropertiesDialog.vala:78
+msgid "General"
+msgstr "பொதுவான"
+
+#: /home/erasmo/foto/foto-1.0/po/../src/dialogs/PropertiesDialog.vala:79
+msgid "More"
+msgstr "மேலும்"
+
+#: /home/erasmo/foto/foto-1.0/po/../src/dialogs/AddToAlbumDialog.vala:41
+msgid "_Cancel"
+msgstr ""
+
+#: /home/erasmo/foto/foto-1.0/po/../src/dialogs/AddToAlbumDialog.vala:42
+msgid "_Add to Album"
+msgstr ""
+
+#: /home/erasmo/foto/foto-1.0/po/../src/dialogs/SettingsDialog.vala:30
+msgid "Preferences"
+msgstr ""
+
+#: /home/erasmo/foto/foto-1.0/po/../src/dialogs/SettingsDialog.vala:52
+msgid "Use dark theme if available"
+msgstr "இருண்ட தீம் கிடைக்கும் என்றால் பயன்படுத்து"
+
+#: /home/erasmo/foto/foto-1.0/po/../src/dialogs/SettingsDialog.vala:62
+msgid "Album background color"
+msgstr "ஆல்பத்தின் பின்னணி நிறம்"
+
+#: /home/erasmo/foto/foto-1.0/po/../src/dialogs/SettingsDialog.vala:73
+msgid "Image viewer background color"
+msgstr "பட பார்வையாளர் பின்னணி நிறம்"
+
+#: /home/erasmo/foto/foto-1.0/po/../src/dialogs/SettingsDialog.vala:96
+msgid "Use cache for thumbnails"
+msgstr "சிறுபடவுருக்களுக்கு கேச்சை பயன்படுத்தவும்"
+
+#: /home/erasmo/foto/foto-1.0/po/../src/dialogs/SettingsDialog.vala:98
+msgid "Empty Cache"
+msgstr "தற்காலிக நினைவிடத்தை காலியாக்கு"
+
+#: /home/erasmo/foto/foto-1.0/po/../src/dialogs/SettingsDialog.vala:102
+msgid ""
+"Foto saves thumbnails of your pictures and albums and stores them in a cache."
+msgstr ""
+"Foto உங்கள் படங்கள் மற்றும் ஆல்பங்களை சிறுபடவுருக்களாக இடைமாற்று "
+"நினைவகத்தில் சேமிக்கிறது."
+
+#: /home/erasmo/foto/foto-1.0/po/../src/dialogs/SettingsDialog.vala:105
+msgid "Empty cache"
+msgstr "தற்காலிக நினைவிடத்தை காலியாக்கு"
+
+#: /home/erasmo/foto/foto-1.0/po/../src/dialogs/SettingsDialog.vala:121
+msgid "Interface"
+msgstr "இடைமுகப்பு"
+
+#: /home/erasmo/foto/foto-1.0/po/../src/dialogs/SettingsDialog.vala:123
+msgid "Cache"
+msgstr "இடைமாற்று"
+
+#: /home/erasmo/foto/foto-1.0/po/../src/dialogs/SettingsDialog.vala:130
+msgid "Reset to defaults"
+msgstr "இயல்புநிலைக்கு மீட்டமை"
+
+#: /home/erasmo/foto/foto-1.0/po/../src/dialogs/AlbumDialog.vala:37
+msgid "My album"
+msgstr "என் ஆல்பம்"
+
+#: /home/erasmo/foto/foto-1.0/po/../src/dialogs/AlbumDialog.vala:43
+msgid "Create Album"
+msgstr "ஆல்பத்தை உருவாக்கு"
+
+#: /home/erasmo/foto/foto-1.0/po/../src/dialogs/AlbumDialog.vala:48
+msgid "Save changes"
+msgstr "மாற்றங்களை சேமி"
+
+#: /home/erasmo/foto/foto-1.0/po/../src/dialogs/AlbumDialog.vala:84
+msgid "Album name:"
+msgstr "ஆல்பத்தின் பெயர்:"
+
+#: /home/erasmo/foto/foto-1.0/po/../src/dialogs/AlbumDialog.vala:87
+msgid "Description:"
+msgstr "விளக்கம்:"
+
+#: /home/erasmo/foto/foto-1.0/po/../src/dialogs/AlbumDialog.vala:129
+msgid "Album already exists"
+msgstr "ஆல்பம் ஏற்கனவே உள்ளது"
