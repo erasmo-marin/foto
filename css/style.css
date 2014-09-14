@@ -1,0 +1,236 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:300,400,200);
+
+@font-face {
+font-family: 'Myriad Pro Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Myriad Pro Regular'), url('../fonts/MYRIADPRO-REGULAR.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Myriad Pro Condensed';
+font-style: normal;
+font-weight: normal;
+src: local('Myriad Pro Condensed'), url('../fonts/MYRIADPRO-COND.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Myriad Pro Semibold Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Myriad Pro Semibold Italic'), url('../fonts/MYRIADPRO-SEMIBOLDIT.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Myriad Pro Semibold';
+font-style: normal;
+font-weight: normal;
+src: local('Myriad Pro Semibold'), url('../fonts/MYRIADPRO-SEMIBOLD.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Myriad Pro Condensed Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Myriad Pro Condensed Italic'), url('../fonts/MYRIADPRO-CONDIT.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Myriad Pro Bold Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Myriad Pro Bold Italic'), url('../fonts/MYRIADPRO-BOLDIT.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Myriad Pro Bold Condensed Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Myriad Pro Bold Condensed Italic'), url('../fonts/MYRIADPRO-BOLDCONDIT.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Myriad Pro Bold Condensed';
+font-style: normal;
+font-weight: normal;
+src: local('Myriad Pro Bold Condensed'), url('../fonts/MYRIADPRO-BOLDCOND.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Myriad Pro Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Myriad Pro Bold'), url('../fonts/MYRIADPRO-BOLD.woff') format('woff');
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    width: 100%;
+    min-height: 106px;
+    background-color: #000;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+section.presentation {
+    background-color: #141714;
+    width: 100%;
+    background: url(../img/1.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.main-menu a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    text-shadow: 1px 1px 2px rgba(1, 1, 1, 0.2);
+    vertical-align: middle;
+    font-family: "myriad-pro", sans-serif;
+	font-weight: bold;
+	-webkit-font-smoothing:antialiased;
+}
+
+.main-menu a:hover {
+    color: #ff4b4b;
+    text-decoration: none;
+}
+
+.main-menu ul{
+    padding-right: 30px;
+    padding-top: 45px;
+    list-style: none;
+    float: right;
+}
+
+.main-menu ul li {
+    display: inline;
+    margin: 0 20px 0 20px;
+}
+
+.presentation .screenshot img {
+    display:block;
+    margin: 0 auto;
+    width: 70%;
+    height: auto;
+    bottom: 0;
+}
+
+.feature-item img {
+    width: 50%;
+}
+
+.screenshot {
+    padding-top: 150px;
+}
+
+section.features {
+    display: block;
+    margin: 0 auto;
+    padding-top: 50px;
+    width: 100%;
+    min-height: 600px;
+    background-color: #121212;
+    color: #fff;
+    background-image: url(../img/noise.png);
+}
+
+.logo-text {
+    background: url(../img/logo.png) no-repeat left center;
+    background-size: contain;
+    padding-left: 90px;
+    margin-left: 30px;
+    margin-top: 5px;
+    float: left;
+    vertical-align: middle;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    font-size: 4em;
+}
+
+
+
+pre {
+    width: 350px;
+}
+
+.install-icon {
+    float: left;
+    background: url(../img/terminal.png) no-repeat;
+    background-size: contain;
+    width: 92;
+    height: 92;
+}
+
+
+
+.feature-item {
+    overflow:auto;
+    padding: 30px;
+    font-family: "myriad-pro", sans-serif;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 3em;
+    font-weight: 100;
+}
+
+
+
+.feature-text {
+    margin-left: 10px;
+}
+
+.build-icon {
+    float: left;
+    background: url(../img/app-default.png) no-repeat;
+    background-size: contain;
+    width: 92;
+    height: 92;
+}
+
+.content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.separator {
+    display: block;
+    width: 100%;
+    height: 0.5px;
+    border-top: 1px solid #333;
+}
+
+
+
+.version {
+    display: inline;
+    color: rgba(255,255,255,0.5);
+}
+
+footer {
+    display: block;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+}

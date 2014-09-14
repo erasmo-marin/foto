@@ -1,151 +1,79 @@
-<!DOCTYPE html>
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-    <link href="" rel="icon" type="image/png">
-    <title>foto</title>
-    <link href="style.css" media="screen" rel="stylesheet" type="text/css">
-    
-  </head>
-  <body class="index">
-    <div class="navbar navbar-inverse navbar-static-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-        </div>
-        <div class="pull-right">
-          <ul class="nav navbar-nav">
-            <li>
-                        <a href="install"><i class="fa fa-cloud-download"></i>
-              Install
-              </a>
-    
-            </li>
-            <li>
-                        <a href="bugs"><i class="fa fa-bug"></i>
-              Report Bugs
-              </a>
-    
-            </li>
-            <li>
-                        <a href="community"><i class="fa fa-comments"></i>
-              Community
-              </a>
-    
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="jumbotron">
-      <div class="container">
-        <h1>
-          <img width="64" height="64" src="logo.svg">
-          foto
-        </h1>
-        <p>Free and Open Source Image Viewer and Album Manager for the Elementary Desktop</p>
-        <img class="screenshot" alt="" width="946" height="470" src="screenshot.png">
-      </div>
-    </div>
-    <div class="main-content">
-      <div class="container">
-        <h2>Overview</h2>
-        <p>
-         overview
-        </p>
-        <div class="row">
-          <div class="col-md-6">
-            <h4>
-              <i class="fa fa-terminal"></i>
-              Some feature
-            </h4>
-            <p>
-              feature description
-            </p>
-          </div>
-          <div class="col-md-6">
-            <h4>
-              <i class="fa fa-play"></i>
-              Other feature
-            </h4>
-            <p>
-                Other feature description
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <h4>
-              <i class="fa fa-eye"></i>
-              More features
-            </h4>
-            <p>
-                description
-            </p>
-          </div>
-          <div class="col-md-6">
-            <h4>
-              <i class="fa fa-tachometer"></i>
-              Feature
-            </h4>
-            <p>
-                desc
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <h4>
-              <i class="fa fa-wrench"></i>
-              Active development
-            </h4>
-            <p>
-              foto is under active development, focusing on code refactoring and
-              cleanups as well as adding features. Want a feature?
-              <a href="issues" target="_blank">
-                Post a patch or request it!
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="next-steps">
-      <div class="container">
-        <h2>Here are a few places you may want to go next...</h2>
-        <hr>
-        <div class="row">
-          <div class="col-xs-6">
-                    <a class="composite" href="install"><i class="fa fa-cloud-download big-circle"></i>
-            <h3>Installation</h3>
-            </a>
-    
-          </div>
-          <!-- / .col-xs-6 -->
-          <!-- /   = link_to getting_started_path, class: "composite" do -->
-          <!-- /     %i.fa.fa-book.big-circle -->
-          <!-- /     %h3 Getting started guide -->
-          <div class="col-xs-6">
-                    <a class="composite" href="source"><i class="fa fa-github big-circle"></i>
-            <h3>Source Code Repository</h3>
-            </a>
-    
-          </div>
-        </div>
-      </div>
-    </div>
-    <footer>
-      <div class="container">
-        <small class="pull-left text-muted copyright">
-          © 2012-2014 foto
-        </small>
-        <div class="social-icons pull-right">
-                    <a target="_blank" href="#"><i class="fa fa-github-alt"></i>
-          </a>
+<html>
+    <head>
+        <title>foto</title>
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/github.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/highlight.min.js"></script>
+        <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+        <script type="text/javascript">stLight.options({publisher: "ae8d6478-cab6-4496-9858-9e8658e4b6a0", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script>
+        $( document ).ready(function() {
+            $('a[href^="#"]').on('click', function(event) {
+                var target = $( $(this).attr('href') );
+                if( target.length ) {
+                    event.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                }
 
-                    <a target="_blank" href="#"><i class="fa fa-twitter"></i>
-          </a>
-
-        </div>
-      </div>
-    </footer>
-</body></html>
+            });
+        });
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="logo-text">foto&nbsp;&nbsp;<span class="version">1.0</span></div>
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="#get-it"><i class="fa fa-cloud-download"></i>&nbsp;&nbsp;Get it</a></li>
+                    <li><a href="#"><i class="fa fa-file-code-o"></i>&nbsp;&nbsp;Documentation</a></li>
+                    <li><a href="http://bugs.launchpad.net/foto"><i class="fa fa-bug"></i>&nbsp;&nbsp;Report bugs</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section class="presentation">
+            <div class="screenshot">
+                <img src="img/screenshot.png">
+            </div>
+        </section>
+ 
+        <section class="features">
+            <h1>fast, simple, beautiful, and it's free</h1>
+            <div class="content">
+                <div class="row" id="get-it">
+                    <div class="col-md-6 feature-item">
+                        <div class="feature-text">Install (Ubuntu 14.04/Ubuntu 14.10, elementaryOS Freya)</div>
+                        <div class="feature-icon install-icon"></div>
+                        <pre><code class="bash">sudo add-apt-repository ppa:erasmo-marin/foto-1.0
+sudo apt-get update
+sudo apt-get install foto</code></pre>
+                    </div>
+                    <div class="col-md-6 feature-item">
+                        <div class="feature-text">Building from source (check INSTALL file for more details)</div>
+                        <div class="feature-icon build-icon"></div>
+                        <pre><code class="bash">bzr branch lp:foto/foto-1.0
+cd foto
+mkdir build
+cd build
+cmake .. -DCMAKE_INSTALL_PREFIX=/usr
+make
+sudo make install</code></pre>
+                    </div>
+                </div>
+                
+                <div class="separator"></div>
+                <footer>
+                    <span class='st_twitter_vcount' displayText='Tweet'></span>
+                    <span class='st_facebook_vcount' displayText='Facebook'></span>
+                    <span class='st_googleplus_vcount' displayText='Google +'></span>
+                </footer>
+            </div>
+        </section>
+    </body>
+</html>
